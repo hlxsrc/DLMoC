@@ -19,17 +19,28 @@ Real-Time Human Detector
 |   |   |-- __init__.py
 |   |   |-- imagetoarraypreprocessor.py
 |   |   |-- simplepreprocessor.py
+|   |-- shallownet_train.py
 ```
 
-- RTHuD is the main directory
+- RTHuD/
 - datasets/
-  - simpledatasetloader.py: is used to load small image datasets from disk, preprocessing and return images and class labels.
+  - `simpledatasetloader.py` is used to load small image datasets from disk, preprocessing and return images and class labels.
 - nn/
   - conv/
-    - shallownet.py: is used to create the ShallowNet architecture. 
+    - `shallownet.py` is used to create the ShallowNet architecture. 
 - preprocessing/
-  - imagetoarraypreprocessor.py: is used to accept an input image and properly order channels based on defined settings.
-  - simplepreprocessor.py: is used to load an image from disk and resize it to a fixed size ignoring aspect ratio. 
+  - `imagetoarraypreprocessor.py` is used to accept an input image and properly order channels based on defined settings.
+  - `simplepreprocessor.py` is used to load an image from disk and resize it to a fixed size ignoring aspect ratio. 
+- `shallownet_train.py` is used to train and create the model, receives images as input and creates hdf5 model as output. 
+
+# Usage
+
+To train and create a model with `shallownet_train.py`
+
+```
+python shallownet_train.py --dataset /path/to/dataset \
+  --model shallownet_weights.hdf5
+```
 
 # Architectures
 
