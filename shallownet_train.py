@@ -7,11 +7,11 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import StratifiedKFold
 
-# pyimagesearch libraries
-from pyimagesearch.preprocessing import ImageToArrayPreprocessor
-from pyimagesearch.preprocessing import SimplePreprocessor
-from pyimagesearch.datasets import SimpleDatasetLoader
-from pyimagesearch.nn.conv import ShallowNet
+# project libraries
+from DLMoC.preprocessing import ImageToArrayPreprocessor
+from DLMoC.preprocessing import SimplePreprocessor
+from DLMoC.datasets import SimpleDatasetLoader
+from DLMoC.nn.conv import ShallowNet
 
 # keras library
 from keras.optimizers import SGD
