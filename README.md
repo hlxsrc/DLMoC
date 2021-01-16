@@ -1,11 +1,11 @@
-# RTHuD
+# DLMoC
 
-Real-Time Human Detector
+DLMoC or Deep Learning Model Creator is a project aimed to train and create deep learning models, print useful information of the training and plot results. 
 
 # Project Structure
 
 ```
-|-- RTHuD/
+|-- DLMoC/
 |   |-- __init__.py
 |   |-- datasets/
 |   |   |-- __init__.py
@@ -22,7 +22,7 @@ Real-Time Human Detector
 |   |-- shallownet_train.py
 ```
 
-- RTHuD/
+- DLMoC/
 - datasets/
   - `simpledatasetloader.py` is used to load small image datasets from disk, preprocessing and return images and class labels.
 - nn/
@@ -52,4 +52,4 @@ Simple architecture. Only contains a few layers. The architecture can be summari
 
 # Acknowledgments
 
-This real-time human detector is based on the examples created by Adrian Rosebrock on the [Deep Learning for Computer Vision with Python. 1, Starter Blunde](https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/) book from PyImageSearch.
+This deep learning model creator is based on the examples created by Adrian Rosebrock on the [Deep Learning for Computer Vision with Python](https://www.pyimagesearch.com/deep-learning-computer-vision-python-book/) book from PyImageSearch.
